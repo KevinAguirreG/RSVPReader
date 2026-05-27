@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-900 text-white antialiased;
+}
+
+:root{
+  --rsvp-accent: #e63946;
+  --rsvp-bg: #0a0a0a;
+  --rsvp-muted: rgba(255,255,255,0.55);
+}
+
+.fade-word{
+  transition: opacity 120ms ease-in-out;
+}
+
+.scrollbar-thin::-webkit-scrollbar{
+  height:8px;
+  width:8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb{ background: rgba(255,255,255,0.08); border-radius:9999px }
+
